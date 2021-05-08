@@ -30,5 +30,20 @@
             </tbody>
         </table>
     </div>
+    <div class="add">
+        <h1>Add a User</h1>
+        <form action="/process" method="post" class="add">
+            {% csrf_token %}
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name" id="first_name">
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name" id="last_name">
+            <label for="email_address">Email</label>
+            <input type="email_address" name="email_address" id="email_address">
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age">
+            <button>Add</button>
+        </form>
+    </div>
 </body>
 </html>
